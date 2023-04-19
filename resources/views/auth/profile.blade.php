@@ -32,8 +32,8 @@
     
     <div class="row justify-content-center">
       <div class="col-lg-4">
-        <h4>Profile Information</code></h5>
-          <span class="text-justify mb-3" style="padding-top:-3px;">Update your account's profile information and email address.<br><br> When You change your email ,you need to verify your email else the account will be blocked</span>
+        <h4>Información de la cuenta</code></h5>
+          <span class="text-justify mb-3" style="padding-top:-3px;">Actualice la información de perfil y la dirección de correo electrónico de su cuenta.</span>
         </div>
 
         <div class="col-lg-8 text-center pt-0">
@@ -65,8 +65,8 @@
 
       <div class="row justify-content-center pt-5">
         <div class="col-lg-4">
-          <h4>Update Password</code></h5>
-            <span class="text-justify" style="padding-top:-3px;">Ensure your account is using a long, random password to stay secure.</span>
+          <h4>Actualizar contraseña</code></h5>
+            <span class="text-justify" style="padding-top:-3px;">Asegúrese de que su cuenta esté usando una contraseña larga y aleatoria para mantenerse seguro.</span>
           </div>
 
           <div class="col-lg-8 text-center pt-0">
@@ -97,14 +97,14 @@
 
         <div class="row justify-content-center pt-5">
           <div class="col-lg-4">
-            <h4>Delete Account</code></h5>
-              <span class="text-justify" style="padding-top:-3px;">Permanently delete your account.</span>
+            <h4>Eliminar cuenta</code></h5>
+              <span class="text-justify" style="padding-top:-3px;">Elimina tu cuenta de forma permanente.</span>
             </div>
 
             <div class="col-lg-8 pt-0">
               <div class="card py-4 mb-5 mt-md-3 bg-white rounded" style="box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175)">
                 <div class="text-left px-3">
-                  Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.
+                Una vez que se elimine su cuenta, todos sus recursos y datos se eliminarán de forma permanente. Antes de eliminar su cuenta, descargue cualquier dato o información que desee conservar.
                 </div>
 
                 {!! Form::open(['method'=>'DELETE', 'action' =>['App\Http\Controllers\Auth\ProfileController@destroy',$user->uid]]) !!}

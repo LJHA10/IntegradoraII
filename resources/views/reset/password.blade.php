@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
-          <div class="card-header">Reset Password</div>
+          <div class="card-header">Restablecer la contraseña</div>
           <div class="card-body">
 
             @if(Session::has('message'))
@@ -35,7 +35,7 @@
             {!! Form::open(['method'=>'POST', 'action'=> 'App\Http\Controllers\Auth\ResetController@store']) !!}
 
             <div class="form-group">
-              {!! Form::label('email', 'Email:') !!}
+              {!! Form::label('email', 'Correo:') !!}
               {!! Form::email('email', null, ['class'=>'form-control'])!!}
             </div>
 

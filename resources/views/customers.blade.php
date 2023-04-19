@@ -8,31 +8,31 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <title>Laravel RealTime CRUD Using Google Firebase</title>
+    <title>PanicSoS</title>
 
 </head>
 <body>
 
 <div class="container" style="margin-top: 50px;">
 
-    <h4 class="text-center">Laravel RealTime CRUD Using Google Firebase</h4><br>
+    <h4 class="text-center">PanicSoS</h4><br>
 
     <h5># Add Customer</h5>
     <div class="card card-default">
         <div class="card-body">
             <form id="addCustomer" class="form-inline" method="POST" action="">
                 <div class="form-group mb-2">
-                    <label for="name" class="sr-only">Name</label>
+                    <label for="name" class="sr-only">Nombre</label>
                     <input id="name" type="text" class="form-control" name="name" placeholder="Name"
                            required autofocus>
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
-                    <label for="email" class="sr-only">Email</label>
+                    <label for="email" class="sr-only">Correo</label>
                     <input id="email" type="email" class="form-control" name="email" placeholder="Email"
                            required autofocus>
                 </div>
                     <input id="uid" name="uid" type="hidden" value="{{ \Session::get('uid') }}" class="form-control ">
-                <button id="submitCustomer" type="button"  class="btn btn-primary mb-2">Submit</button>
+                <button id="submitCustomer" type="button"  class="btn btn-primary mb-2">Enviar</button>
             </form>
         </div>
     </div>
@@ -43,8 +43,8 @@
     <table class="table table-bordered">
         <tr>
             <th>UID</th>
-            <th>Name</th>
-            <th>Email</th>
+            <th>Nombre</th>
+            <th>Correo</th>
             <th width="180" class="text-center">Action</th>
         </tr>
         <tbody id="tbody">
