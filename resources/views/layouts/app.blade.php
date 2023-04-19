@@ -45,7 +45,7 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar session') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
                                 </li>
                             @endif
 
@@ -55,16 +55,21 @@
                                 </li>
                             @endif
                         @else
-
+                        
                           <li class="nav-item">
-                              <a class="nav-link text-dark" href="home/profile">{{ __('Perfil') }}</a>
+                              <a class="nav-link text-dark" href="/home">{{ __('Home') }}</a>
                           </li>
-
+                          <li class="nav-item">
+                              <a class="nav-link text-dark" href="/profile">{{ __('Perfil') }}</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-dark" href="/registros">{{ __('Registros') }}</a>
+                          </li>
                           <li class="nav-item">
                             <a class="nav-link text-dark" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                {{ __('Cerrar sesión') }}
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
