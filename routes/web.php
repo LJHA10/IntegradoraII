@@ -29,10 +29,13 @@ Route::post('login/{provider}/callback', 'Auth\LoginController@handleCallback');
 
 Route::resource('/profile', App\Http\Controllers\Auth\ProfileController::class)->middleware('user','fireauth');
 
-Route::get('/registros', function () {
-    return view('registros');
-});
+Route::resource('/registros', App\Http\Controllers\RegistrosController::class)->middleware('user','fireauth');
 
+// Route::get('/registros', function () {
+//     return view('registros');
+// });
+
+Route::get('usuarios/buscar', [UsuariosController::class, 'buscar'])->name('usuarios.buscar');
 
 
 Route::resource('/password/reset', App\Http\Controllers\Auth\ResetController::class);
